@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "ED0D7CDA-7EA9-411F-AA67-15E912B39A03",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:testAPIApp.xcodeproj",
+      "identifier" : "6FA87EDF29B61856002F7FA6",
+      "name" : "testAPIApp"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
