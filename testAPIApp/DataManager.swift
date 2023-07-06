@@ -82,12 +82,12 @@ class DataManager {
         ),
         //15
         "CENTRAL SYNAGOGUE - NEW YORK" : (
-            "http://samrohn.s3.amazonaws.com/panoramas/NYC/central-synagogue-panorama/index.html",
+            "https://samrohn.s3.amazonaws.com/panoramas/NYC/central-synagogue-panorama/index.html",
             "NEW YORK"
         ),
         //16
         "ELDRIDGE STREET SYNAGOGUE - NEW YORK" : (
-            "http://samrohn.s3.amazonaws.com/panoramas/NYC/eldridge-street-synagogue/index.html",
+            "https://samrohn.s3.amazonaws.com/panoramas/NYC/eldridge-street-synagogue/index.html",
             "NEW YORK"
         ),
         //17

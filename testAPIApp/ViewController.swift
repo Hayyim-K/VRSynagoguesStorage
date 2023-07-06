@@ -20,10 +20,14 @@ class ViewController: UIViewController {
     }
     private func lodeWebContent() {
         DispatchQueue.global().async {
+            print("1")
+            print(self.stringURL ?? "ERROR")
             guard let url = URL(string: self.stringURL) else { return }
             guard let htmlString = try? String(contentsOf: url) else { return }
             DispatchQueue.main.async {
                 self.wkWebView.loadHTMLString(htmlString, baseURL: url)
+                print("2")
+                print(url)
             }
         }
     }
