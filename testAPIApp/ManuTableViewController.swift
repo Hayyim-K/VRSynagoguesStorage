@@ -11,6 +11,14 @@ class ManuTableViewController: UITableViewController {
     
     private let synagogues = Synagogue.getData()
     
+    override func viewDidLoad() {
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Support Us",
+                                                             style: .done,
+                                                             target: self,
+                                                             action: #selector(didTapDonate))
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return synagogues.count
     }
@@ -32,6 +40,12 @@ class ManuTableViewController: UITableViewController {
             let mainVC = segue.destination as! ViewController
             mainVC.stringURL = synagogues[indexPath.row].url
             mainVC.navigationItem.title = synagogues[indexPath.row].name
+        }
+    }
+    
+    @objc private func didTapDonate() {
+        if let url = URL(string: "https://www.buymeacoffee.com/hayyim") {
+            UIApplication.shared.open(url)
         }
     }
     
