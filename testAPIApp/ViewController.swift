@@ -11,7 +11,6 @@ import WebKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var wkWebView: WKWebView!
-    
     var stringURL: String!
     
     override func viewDidLoad() {
